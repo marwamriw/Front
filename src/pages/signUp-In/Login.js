@@ -24,12 +24,6 @@ const Login = () => {
         if(isAuth) navigate('/')
       }, [isAuth])
 
-      const google = () => {
-        window.open("http://localhost:5000/auth/google", "_self");
-      };
-      const github= () => {
-        window.open("http://localhost:5000/auth/github", "_self");
-      };
 
   return (
   
@@ -49,8 +43,8 @@ const Login = () => {
                 <div className='submit-container-login'>
               <input type='submit' value="SIGN IN" className='submit'/>
               <div className='socialmediaLogin'>
-              <button className='buttonlogin google' onClick={google}><FcGoogle  size={30}/></button>
-              <button className='buttonlogin facebook' onClick={github}><FaGithub  size={30}/></button>
+              <button className='buttonlogin google' ><FcGoogle  size={30}/></button>
+              <button className='buttonlogin facebook'><FaGithub  size={30}/></button>
                 <p>Need an acount ?<Link to="/register" className='loginlink'> SIGN UP </Link></p>
                 </div>
                 </div>

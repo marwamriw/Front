@@ -27,12 +27,7 @@ const Register = () => {
         if(isAuth) navigate('/')
     }, [isAuth, navigate])
 
-    const google = () => {
-      window.open("http://localhost:5000/auth/google", "_self");
-    };
-    const github= () => {
-      window.open("http://localhost:5000/auth/github", "_self");
-    };
+    
 
   return (
       <form className='containerRegister' onSubmit={handleSubmit(onSubmit)}>
@@ -53,8 +48,8 @@ const Register = () => {
             </div>
             <div className='submit-container-register'>
             <input type='submit' className='submit' value="SIGN UP"/>
-            <button className='buttonRegister google' onClick={google}><FcGoogle  size={32}/></button>
-            <button className='buttonRegister facebook' onClick={github}><FaGithub  size={32}/></button>
+            <button className='buttonRegister google'><FcGoogle  size={32}/></button>
+            <button className='buttonRegister facebook' ><FaGithub  size={32}/></button>
             <p>Already a user ?<Link to="/login" className='loginlink' > SIGN IN </Link></p>
           </div>
           </div>
