@@ -1,0 +1,204 @@
+/* css for register page  */
+.containerRegister {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.headerRegister {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.textRegister {
+    font-size: 24px;
+    font-weight: bold;
+    color: #800080;
+}
+
+.underlineRegister {
+    width: 50px;
+    height: 2px;
+    background-color: #800080;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.inputsRegister {
+    margin-bottom: 20px;
+}
+
+.inputRe {
+    margin-bottom: 10px;
+}
+
+.inputRegister {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
+.submit-container-register {
+    text-align: center;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #555;
+}
+
+.buttonRegister {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginlink {
+    color: #333;
+    text-decoration: none;
+}
+
+.loginlink:hover {
+    text-decoration: underline;
+}
+  /* Responsive media queries */
+
+@media screen and (max-width: 600px) {
+    .containerRegister {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .textRegister {
+        font-size: 20px;
+    }
+}
+
+
+    /* css for login page */
+.containerLogin {
+    max-width: 400px;
+    margin: 70px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.headerLogin {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.textRegister {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.underlineLogin {
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.inputsLogin {
+    margin-bottom: 20px;
+}
+
+.inputLo {
+    margin-bottom: 10px;
+}
+
+.inputRegister {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
+.submit-container-login {
+    text-align: center;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit:hover {
+    background-color: #555;
+}
+
+.buttonlogin {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.socialmediaLogin {
+    margin-top: 10px;
+}
+
+.loginlink {
+    color: #333;
+    text-decoration: none;
+}
+
+.loginlink:hover {
+    text-decoration: underline;
+}
+
+  /* Responsive media queries */
+
+@media screen and (max-width: 600px) {
+    .containerLogin {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .textRegister {
+        font-size: 20px;
+    }
+}

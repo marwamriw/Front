@@ -1,0 +1,130 @@
+/* AddEditBlog.css */
+
+.addForm{
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  }
+  
+  .addInput,
+  .addTextA {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    
+    box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid hsl(264, 30%, 30%);
+  }
+  .addTextA{
+    height: 200px;
+  }
+  .addInput[type="submit"] {
+    background-color: hsl(264, 30%, 30%);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .addInput[type="submit"]:hover {
+    background-color: #e58a7b;
+  }
+  .addTitle{
+    color: #e58a7b;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+  .addForm {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .addTitle {
+    font-size: 24px;
+  }
+  
+  .addInput,
+  .addTextA {
+    font-size: 14px;
+  }
+}
+  
+  /* css for edit blog */
+  
+
+  .container-editblog{
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  }
+  .container-editblog button{
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(264, 30%, 30%);;
+  }
+  .editbloginput{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    
+    box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid hsl(264, 30%, 30%);
+  }
+  .editblogarea{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    
+    box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid hsl(264, 30%, 30%);
+  }
+  .editTitle{
+    color: #e58a7b;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .edditInputButton{
+    background-color: hsl(264, 30%, 30%) !important;
+    color: white !important;
+    cursor: pointer !important;
+    width: 560px;
+    height: 35px;
+  }
+  .edditInputButton:hover{
+    background-color: #e58a7b !important;
+  }
+
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+  .container-editblog {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .editTitle {
+    font-size: 24px;
+  }
+
+  .editbloginput,
+  .editblogarea {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,120 @@
+.singleblog-container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.singleblog-img{
+    width: 95%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.singleblog-date{
+    padding: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    color: grey;
+}
+.singleblog-desc{
+    padding: 100px;
+    padding-top: 50px;
+    font-size: 14px !important;
+    line-height: 24px;
+    color: rgb(69, 69, 69);
+    font-weight: normal !important;
+}
+.singleblog-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #800080;
+    margin-top: 15px;
+}
+
+/* css for button back */
+
+.buttonback {
+    background: #C71585;
+    padding: 1.2rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: 0.25s;
+    margin: 2rem;
+    margin-bottom: 30px;
+}
+.buttonback:active {
+    background: rgb(161, 92, 225);
+    transition: 0;
+}
+
+.arrow {
+    position: relative;
+    background: black;
+    width: 2rem;
+    height: 0.4rem;
+    transition: 0.5s;
+    border-radius: 1rem;
+    transform-origin: right center;
+}
+.arrow:before {
+    transform: rotate(-35deg);
+}
+.arrow:after {
+    transform: rotate(35deg);
+}
+.arrow:before, .arrow:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    background: black;
+    width: 1em;
+    height: 0.4rem;
+    transform-origin: 0.2rem center;
+    transition: 0.5s;
+    border-radius: 1rem;
+}
+.flip {
+    transform: translateZ(1rem) perspective(600);
+}
+
+.flip.right {
+    transform: translateZ(1rem) perspective(600) rotateY(180deg);
+}
+/* responsive */
+@media screen and (max-width: 768px) {
+    .singleblog-date {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .singleblog-desc {
+        padding: 10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .singleblog-title {
+        font-size: 20px;
+    }
+
+    .buttonback {
+        padding: 0.8rem 1.6rem;
+        margin: 1rem;
+    }
+}
+
+    @media (max-width: 576px) {
+    .singleblog-img {
+        max-height: 300px;
+    }
+
+    .singleblog-title {
+        font-size: 18px;
+    }
+
+    .buttonback {
+        padding: 0.6rem 1.2rem;
+    }
+}

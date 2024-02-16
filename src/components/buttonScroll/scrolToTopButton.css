@@ -1,0 +1,30 @@
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: hsl(264, 61%, 20%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #e58a7b;
+}
+
+
+/* Adjust size for smaller screens */
+@media (max-width: 768px) {
+    .scroll-to-top-btn {
+        display: none;
+    }
+}
+
+    @media (max-width: 576px) {
+        .scroll-to-top-btn {
+            display: none;
+    }
+}

@@ -1,0 +1,93 @@
+.profileContainer{
+    padding: 3px;
+    width:  600px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px auto;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+}
+.profileHeader{
+    text-align: center;
+    font-weight: bolder;
+    margin-top:40px;
+    font-size: 30px;
+    color: hsl(264, 30%, 30%);
+}
+.profileForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; 
+    max-width: 300px;
+}
+
+.profilepic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 30px auto;
+    cursor: pointer;
+    object-fit: cover;
+    border: 4px solid #C71585 ;
+    padding: 2px;
+    
+}
+.inputProfile{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #C71585;
+    background-color: fbfbfb;
+}
+.profileButton{
+    width: 50px;
+    padding: 3px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.profileButton{
+    display: flex;
+    margin :auto;
+}
+.uploadMessage{
+    margin-bottom: 20px;
+    color: hsl(264, 30%, 30%);
+    text-align: center;
+}
+/* responsive */
+@media (max-width: 768px) {
+    .profileHeader {
+        font-size: 20px;
+    }
+}
+
+    @media (max-width: 576px) {
+    .profileContainer {
+        padding: 5px;
+        margin: 30px auto;
+    }
+
+    .profileHeader {
+        font-size: 18px;
+    }
+
+    .profilepic {
+        width: 80px;
+        height: 80px;
+    }
+
+    .inputProfile {
+        margin-bottom: 15px;
+    }
+
+    .profileButton {
+        width: 40px;
+    }
+    }

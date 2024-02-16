@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto+Slab:wght@300&family=Roboto:wght@300&family=RocknRoll+One&display=swap');
+*{ 
+    font-family: 'RocknRoll One', sans-serif;}
+
+.image-daschboard{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    font-style: italic;
+}
+.blog-container{
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px ;
+    transition: 0.3s;
+    animation: ease-in;
+    margin: 40px;
+    display: flex;
+    width: 900px;
+    height: 300px;
+    margin-left: 300px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.blog-container:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px ;
+}
+.image-blog-container{
+    width: 30%;
+    height: 100%;
+    margin-right: 20px;
+}
+.blog-img{
+    width: 100%;
+    height: 100%;
+}
+.blog-content{
+    width: 60%;
+    margin: 20px;
+    font-size: 14px;
+}
+
+.btn-delete{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+}
+.btn-edit{
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    border : none;
+    background-color: transparent;
+}
+.blog-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #C71585;
+    margin-top: 10px;
+    text-align: center;
+}
+.blog-body p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+    line-height: 1.25;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+}
+.blog-date{
+    font-style: italic;
+    font-size: 10px;
+}
+.blog-body{
+    margin-top: 40px;
+}
+.btn{
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 5px;
+    position: absolute;
+    margin-top: 18px;
+    color: #C71585;
+}
+.btn:hover{
+    color: #800080;
+}
+.dashspan{
+    color: #C71585;
+}
+.number-blog-dash{
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    color: #800080;
+}
+/* responsive  */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .blog-container {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+  /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+    .blog-container {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+  /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+    .blog-container {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-daschboard {
+        height: 300px;
+    }
+
+    .number-blog-dash {
+            font-size: 24px;
+            margin-top: 30px;
+    }
+
+    .blog-title {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .blog-body p {
+        font-size: 12px;
+    }
+}
+
+  /* Extra small devices (portrait phones, under 576px) */
+@media (max-width: 575.98px) {
+    .blog-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+    .image-daschboard {
+        height: 200px;
+    }
+
+    .number-blog-dash {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .blog-title {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .blog-content {
+        font-size: 12px;
+    }
+
+    .blog-img {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .blog-container:hover {
+        transform: none;
+    }
+}

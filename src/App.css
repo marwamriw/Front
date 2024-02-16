@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto+Slab:wght@300&family=Roboto:wght@300&family=RocknRoll+One&display=swap');
+*{ 
+  font-family: 'RocknRoll One', sans-serif;}
+.App{
+    width: 100vw;
+    min-height: 100vh;
+    background:hsl(31, 91%, 91%);
+    transition: 0.5s;
+}
+.App.dark{
+    background: #263238;
+}
