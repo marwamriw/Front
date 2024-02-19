@@ -149,6 +149,5 @@ textarea {
                     min-width: 90%;
                 }
             }
-      };`
-  export default Contact
-  
+    };`
+export default Contact

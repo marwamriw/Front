@@ -62,32 +62,71 @@
     text-align: center;
 }
 /* responsive */
-@media (max-width: 768px) {
-    .profileHeader {
-        font-size: 20px;
-    }
-}
-
-    @media (max-width: 576px) {
+@media only screen and (max-width: 768px) {
     .profileContainer {
-        padding: 5px;
-        margin: 30px auto;
+        width: 90%; 
+        margin: 50px auto; 
     }
 
     .profileHeader {
-        font-size: 18px;
+        font-size: 24px; 
+    }
+
+    .profileForm {
+        max-width: 250px; 
     }
 
     .profilepic {
-        width: 80px;
+        width: 80px; 
         height: 80px;
+        margin: 20px auto; 
     }
 
     .inputProfile {
-        margin-bottom: 15px;
+        font-size: 14px; 
     }
 
     .profileButton {
-        width: 40px;
+        width: 40px; 
+        font-size: 20px; 
     }
+
+    .uploadMessage {
+        font-size: 12px; 
     }
+}
+
+/* Responsive styling for screen sizes 576px and below */
+@media only screen and (max-width: 576px) {
+    .profileContainer {
+        width: 90%; 
+        margin: 30px auto; 
+    }
+
+    .profileHeader {
+        font-size: 20px; 
+    }
+
+    .profileForm {
+        max-width: 200px; 
+    }
+
+    .profilepic {
+        width: 60px; 
+        height: 60px;
+        margin: 10px auto; 
+    }
+
+    .inputProfile {
+        font-size: 12px; 
+    }
+
+    .profileButton {
+        width: 35px;
+        font-size: 18px; 
+    }
+
+    .uploadMessage {
+        font-size: 10px; 
+    }
+}

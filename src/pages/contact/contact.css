@@ -90,7 +90,8 @@
 
     @media (max-width: 576px) {
         .left-contact {
-            width: calc(100% - 40px);
-            margin-left: 20px;
+            display: none;
         }
+
+
     }
