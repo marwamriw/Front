@@ -137,16 +137,16 @@ textarea {
         }
     
         @media only screen and (max-width: 576px) {
-            width: 90%;
-            margin-bottom: 80px;
+            width: 50%;
+            margin-bottom: 30px;
     
             form {
                 input {
-                    width: 90%;
+                    font-size: 14px; 
                 }
     
                 textarea {
-                    min-width: 90%;
+                    font-size: 14px; 
                 }
             }
     };`
