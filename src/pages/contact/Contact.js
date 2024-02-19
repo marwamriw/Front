@@ -137,17 +137,8 @@ textarea {
         }
     
         @media only screen and (max-width: 576px) {
-            width: 50%;
-            margin-bottom: 30px;
-    
             form {
-                input {
-                    font-size: 14px; 
-                }
-    
-                textarea {
-                    font-size: 14px; 
-                }
+                display :none ;
             }
     };`
 export default Contact

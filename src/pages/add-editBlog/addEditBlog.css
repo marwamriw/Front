@@ -128,6 +128,6 @@
     font-size: 14px;
   }
   .edditInputButton{
-    font-size: 8px;
+    display: none;
   }
 }
