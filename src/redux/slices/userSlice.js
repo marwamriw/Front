@@ -24,6 +24,23 @@ export const signin = createAsyncThunk(
         }
     })
 
+
+    //getuser
+export const getuser = createAsyncThunk(
+    "/getuser", async (_, {rejectWithValue}) => {
+        try {
+            const res = await axios.get("/getuser", {
+                headers:{
+                    token:localStorage.getItem("token")
+                }
+            })
+            return res.data
+        } catch (error) {
+            return rejectWithValue(error.response.data.msg)
+        }
+    }
+)
+
     //delete user account 
     export const deleteUser = createAsyncThunk(
         "/deleteuser", async (userId, {rejectWithValue}) => {
@@ -41,7 +58,7 @@ export const signin = createAsyncThunk(
     )
     //update user
     export const updateUser = createAsyncThunk(
-        "/updateuser", async (userId, {rejectWithValue}) => {
+        "/updateuser", async (userId, {rejectWithValue,dispatch}) => {
             try {
                 const res = await axios.put(`/updateuser/${userId._id}`,userId, {
                     headers:{
@@ -49,6 +66,7 @@ export const signin = createAsyncThunk(
                         'Content-Type': 'application/json'
                     }
                 })
+                dispatch(getuser())
                 return res.data
             } catch (error) {
                 return rejectWithValue(error.response.data.msg)

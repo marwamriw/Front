@@ -87,7 +87,7 @@ const Menu = ({theme,setTheme}) => {
             </ul>
             <div style={{ display: 'flex', alignItems: 'center' }} className='search-box' >
             <input type='text' placeholder='Search Blog ' value={search} onChange={e=>setSearch(e.target.value)} style={{ paddingRight: '5px' }}  />
-            <button onClick={handleSubmit} style={{ position: 'absolute', left: '1330px',border: 'none', background: 'transparent', cursor: 'pointer', }}><FcSearch style={{ fontSize: '2vw' }} /></button>
+            <button onClick={handleSubmit} style={{ position: 'absolute', left: '1360px',border: 'none', background: 'transparent', cursor: 'pointer', }}><FcSearch style={{ fontSize: '2vw' }} /></button>
             </div>
             <img onClick={()=>{toggle_mode()}} src={theme =="light" ? dark : light} alt="" className='toggle-icon'/>
             
